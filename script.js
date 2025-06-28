@@ -77,3 +77,10 @@ function calculate() {
     operator = '';
     shouldResetDisplay = true;
 }
+
+// Add event listener to ensure DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize display
+    display = document.getElementById('result');
+    console.log('Calculator initialized');
+});
