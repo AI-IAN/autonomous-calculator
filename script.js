@@ -14,7 +14,7 @@ function appendToDisplay(value) {
     if (['+', '-', '*', '/'].includes(value)) {
         if (currentInput === '') return;
         
-        if (previousInput \!== '' && operator \!== '' && currentInput \!== '') {
+        if (previousInput !== '' && operator !== '' && currentInput !== '') {
             calculate();
         }
         
@@ -62,7 +62,7 @@ function calculate() {
             break;
         case '/':
             if (current === 0) {
-                alert('Cannot divide by zero\!');
+                alert('Cannot divide by zero!');
                 return;
             }
             result = prev / current;
